@@ -1,0 +1,23 @@
+div.root{
+	position: absolute;
+	table-layout: fixed;
+    border-color: darkgrey;
+    border-style: solid;
+    border-width: 2px;
+    width: 150px;
+    height: 264px;
+    box-shadow: 2px 2px 10px #888888;
+}
+.root>.option{
+	padding: 10px 10px 15px 20px;
+}
+
+.root>.option:hover{
+	border: 6px 0px 6px 0px;
+	background-color: #eee;
+}
+
+hr.line-separator{
+	margin: 0px;
+	border-color: #eee;
+}
