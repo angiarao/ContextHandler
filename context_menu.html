@@ -1,68 +1,39 @@
-<!-- <html>
+<html>
 <head>
     <title>context menu</title>
 </head>
 <body>
-    <div class="contextclick" context_id="ab123">
+    <div class="contextclick" context-id="ab123" style="
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    ">
         <input type="button" />
     </div>
-    <div class="root">
-        <div class="option">
-        	<span>
-	        	<span class="icon"></span>
-	        	<div>
-	        		<span>option1</span>
-	        	</div>
-	        	<span class="popup"></span>
-        	</span>
-        </div>
-        <div class="option">
-        	<span>
-	        	<span class="icon"></span>
-	        	<div>
-	        		<span>option1</span>
-	        	</div>
-	        	<span class="popup"></span>
-        	</span>
-        </div>
-        <div class="option">
-        	<span>
-	        	<span class="icon"></span>
-	        	<div>
-	        		<span>option1</span>
-	        	</div>
-	        	<span class="popup"></span>
-        	</span>
-        </div>
-        <hr class="line-separator"/>
-        <div class="option">
-        	<span>
-	        	<span class="icon"></span>
-	        	<div>
-	        		<span>option1</span>
-	        	</div>
-	        	<span class="popup"></span>
-        	</span>
-        </div>
-        <div class="option">
-        	<span>
-	        	<span class="icon"></span>
-	        	<div>
-	        		<span>option1</span>
-	        	</div>
-	        	<span class="popup"></span>
-        	</span>
-        </div>
-        <div class="option">
-        	<span>
-	        	<span class="icon"></span>
-	        	<div>
-	        		<span>option1</span>
-	        	</div>
-	        	<span class="popup"></span>
-        	</span>
-        </div>
+    <div class="contextclick" context-id="ab123" style="
+    position: absolute;
+    top: 530px;
+    left: 200px;
+    ">
+        <input type="button" />
     </div>
+
+    <div class="contextclick" context-id="ab123" style="
+    position: absolute;
+    top: 100px;
+    left: 1210px;
+    ">
+        <input type="button" />
+    </div>
+
+    <div class="contextclick" context-id="ab123" style="
+    position: absolute;
+    top: 530px;
+    left: 1210px;
+    ">
+        <input type="button" />
+    </div>
+
 </body>
 <script type="text/javascript" src="ContextHandler.js"></script>
 <link rel="stylesheet" type="text/css" href="context.css">
@@ -71,28 +42,256 @@
         "controlType": "a1",
         "context_Menu": {
             "id": "ab123",
-            "context_options": [
+            "contextOptions": 
+            [
                 {
-                    "label": "babab",
+                    "label": "option1",
                     "optionId": "some_option_id",
                     "iconId": "some_id",
                     "groupId": "some_grou_id",
-                    "contextOption": [{
-                        "name": "babab",
+                    "contextOptions": [
+                        {
+                        "label": "suboption1",
                         "optionId": "some_option_id",
-                        "icon": "some_id",
+                        "iconId": "some_id",
+                        },
+                        {
+                        "label": "suboption2",
+                        "optionId": "some_option_id",
+                        "iconId": "some_id",
+                        },
+                        {
+                        "label": "suboption3",
+                        "optionId": "some_option_id",
+                        "iconId": "some_id",
+                        },
+                    ],
+                },
+                {
+                    "label": "option2",
+                    "optionId": "some_option_id",
+                    "iconId": "some_id",
+                    "groupId": "some_grou_id",
+                    "contextOptions": [{
+                        "label": "suboption1",
+                        "optionId": "some_option_id",
+                        "iconId": "some_id",
                     }],
                 },
+                {
+                    "label": "option3",
+                    "optionId": "some_option_id",
+                    "iconId": "some_id",
+                    "groupId": "some_grou_id",
+                    "contextOptions": [{
+                        "label": "suboption1",
+                        "optionId": "some_option_id",
+                        "iconId": "some_id",
+                    }],
+                },
+                {
+                    "label": "option4",
+                    "optionId": "some_option_id",
+                    "iconId": "some_id",
+                    "groupId": "some_group_id",
+                    "contextOptions": [{
+                        "label": "babab",
+                        "optionId": "some_option_id",
+                        "iconId": "some_id",
+                    }],
+                },
+                {
+                    "label": "option5",
+                    "optionId": "some_option_id",
+                    "iconId": "some_id",
+                    "groupId": "some_group_id",
+                    "contextOptions": [{
+                        "label": "babab",
+                        "optionId": "some_option_id",
+                        "iconId": "some_id",
+                    }],
+                },
+                {
+                    "label": "option6",
+                    "optionId": "some_option_id",
+                    "iconId": "some_id",
+                    "groupId": "some_group_id",
+                    "contextOptions":
+                    [
+
+                        {
+                        "label": "optionsWithSub",
+                        "optionId": "sub_option_id",
+                        "iconId": "some_id",
+                        "contextOptions":
+                            [{
+                                "label": "sub1",
+                                "optionId": "some_option_id",
+                                "iconId": "some_some_id",
+                                "contextOptions":
+                                [
+                                    {
+                                        "label": "sub2",
+                                        "optionId": "some_option_id",
+                                        "iconId": "some_id"
+                                    },
+                                    {
+                                        "label": "sub3",
+                                        "optionId": "tata_option_id",
+                                        "iconId": "some_id"
+                                    },
+                                    {
+                                        "label": "sub4",
+                                        "optionId": "some_option_id",
+                                        "iconId": "some_id"
+                                    }    
+                                ]
+                            },
+                            {
+                                "label": "sub2",
+                                "optionId": "some_option_id",
+                                "iconId": "some_id"
+                            },
+                            {
+                                "label": "sub3",
+                                "optionId": "some_option_id",
+                                "iconId": "some_id"
+                            },
+                            {
+                                "label": "sub4",
+                                "optionId": "some_option_id",
+                                "iconId": "some_id"
+                            },
+                            {
+                                "label": "sub5",
+                                "optionId": "some_option_id",
+                                "iconId": "some_id"
+                            },
+                            {
+                                "label": "sub6",
+                                "optionId": "some_option_id",
+                                "iconId": "some_id",
+                                "contextOptions":
+                                [
+                                    {
+                                        "label": "sub2",
+                                        "optionId": "some_option_id",
+                                        "iconId": "some_id"
+                                    },
+                                    {
+                                        "label": "sub3",
+                                        "optionId": "tata_option_id",
+                                        "iconId": "some_id"
+                                    },
+                                    {
+                                        "label": "sub4",
+                                        "optionId": "some_option_id",
+                                        "iconId": "some_id"
+                                    }    
+                                ]
+                            }]
+                        },
+                        {
+                        "label": "babab",
+                        "optionId": "some_option_id",
+                        "iconId": "some_id",
+                        },
+                        {
+                        "label": "babab",
+                        "optionId": "some_option_id",
+                        "iconId": "some_id",
+                        },
+                        {
+                        "label": "babab",
+                        "optionId": "some_option_id",
+                        "iconId": "some_id",
+                        },
+                        {
+                        "label": "babab",
+                        "optionId": "some_option_id",
+                        "iconId": "some_id",
+                        },
+                        {
+                        "label": "lastone",
+                        "optionId": "some_option_id",
+                        "iconId": "some_id",
+                        "contextOptions":
+                            [{
+                                "label": "sub1",
+                                "optionId": "some_option_id",
+                                "iconId": "some_some_id",
+                                "contextOptions":
+                                [
+                                    {
+                                        "label": "sub2",
+                                        "optionId": "some_option_id",
+                                        "iconId": "some_id"
+                                    },
+                                    {
+                                        "label": "sub3",
+                                        "optionId": "tata_option_id",
+                                        "iconId": "some_id"
+                                    },
+                                    {
+                                        "label": "sub4",
+                                        "optionId": "some_option_id",
+                                        "iconId": "some_id"
+                                    }    
+                                ]
+                            },
+                            {
+                                "label": "sub2",
+                                "optionId": "some_option_id",
+                                "iconId": "some_id"
+                            },
+                            {
+                                "label": "sub3",
+                                "optionId": "some_option_id",
+                                "iconId": "some_id"
+                            },
+                            {
+                                "label": "sub4",
+                                "optionId": "some_option_id",
+                                "iconId": "some_id"
+                            },
+                            {
+                                "label": "sub5",
+                                "optionId": "some_option_id",
+                                "iconId": "some_id"
+                            },
+                            {
+                                "label": "sub6",
+                                "optionId": "some_option_id",
+                                "iconId": "some_id",
+                                "contextOptions":
+                                [
+                                    {
+                                        "label": "sub2",
+                                        "optionId": "some_option_id",
+                                        "iconId": "some_id"
+                                    },
+                                    {
+                                        "label": "sub3",
+                                        "optionId": "tata_option_id",
+                                        "iconId": "some_id"
+                                    },
+                                    {
+                                        "label": "sub4",
+                                        "optionId": "some_option_id",
+                                        "iconId": "some_id"
+                                    }    
+                                ]
+                            }]
+                        }
+                    ]
+                }
             ]
         }
     }];
 </script>
 </html>
- -->
-
-
-
- <div class="cm">
+ <!-- 
+      <div class="cm">
     <ul class="cm-list">
         <li class="cm-item" id="option_id">
             <i id="icon_id"></i>
@@ -113,7 +312,63 @@
         </li>
     <ul>
  </div>
-
+   <div class="root">
+        <div class="option">
+            <span>
+                <span class="icon"></span>
+                <div>
+                    <span>option1</span>
+                </div>
+                <span class="popup"></span>
+            </span>
+        </div>
+        <div class="option">
+            <span>
+                <span class="icon"></span>
+                <div>
+                    <span>option1</span>
+                </div>
+                <span class="popup"></span>
+            </span>
+        </div>
+        <div class="option">
+            <span>
+                <span class="icon"></span>
+                <div>
+                    <span>option1</span>
+                </div>
+                <span class="popup"></span>
+            </span>
+        </div>
+        <hr class="line-separator"/>
+        <div class="option">
+            <span>
+                <span class="icon"></span>
+                <div>
+                    <span>option1</span>
+                </div>
+                <span class="popup"></span>
+            </span>
+        </div>
+        <div class="option">
+            <span>
+                <span class="icon"></span>
+                <div>
+                    <span>option1</span>
+                </div>
+                <span class="popup"></span>
+            </span>
+        </div>
+        <div class="option">
+            <span>
+                <span class="icon"></span>
+                <div>
+                    <span>option1</span>
+                </div>
+                <span class="popup"></span>
+            </span>
+        </div>
+    </div>
 
 // Namespace: camelcase
 // Class: pascalcase
@@ -126,3 +381,4 @@
 // id: camelcase
 // html5 attribute: 
      // for attributes: data-<attributename>
+ -->

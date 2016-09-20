@@ -1,23 +1,39 @@
-div.root{
+div.cm{
 	position: absolute;
-	table-layout: fixed;
+}
+
+.cm-list{	
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    table-layout: fixed;
     border-color: darkgrey;
     border-style: solid;
     border-width: 2px;
-    width: 150px;
-    height: 264px;
     box-shadow: 2px 2px 10px #888888;
-}
-.root>.option{
-	padding: 10px 10px 15px 20px;
+    min-width: 120px;
 }
 
-.root>.option:hover{
+.cm-item:not(.active) .cm-list{
+	display: none;
+}
+
+.cm-item.active>.cm-list{
+	display: block;
+}
+
+.cm-item{
+	display: block;
+	padding: 10px 10px 15px 20px;
+    background-color: white;
+}
+
+.cm-item:hover{
 	border: 6px 0px 6px 0px;
 	background-color: #eee;
 }
 
-hr.line-separator{
+.cm-br{
 	margin: 0px;
 	border-color: #eee;
 }
